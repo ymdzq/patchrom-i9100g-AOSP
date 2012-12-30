@@ -1,0 +1,30 @@
+local-phone-apps = ApplicationsProvider \
+                   BackupRestoreConfirmation \
+                   Bluetooth \
+                   CertInstaller \
+                   DefaultContainerService \
+                   DrmProvider \
+                   Galaxy4 \
+                   GalaxyS2Settings \
+                   Gallery2 \
+                   HoloSpiralWallpaper \
+                   HTMLViewer \
+                   InputDevices \
+                   KeyChain \
+                   LiveWallpapers \
+                   LiveWallpapersPicker \
+                   MagicSmokeWallpapers \
+                   MediaProvider \
+                   MusicFX \
+                   NoiseField \
+                   PhaseBeam \
+                   PicoTts \
+                   SamsungServiceMode \
+                   SettingsProvider \
+                   SharedStorageBackup \
+				   Stk \
+                   UserDictionaryProvider \
+                   VideoEditor \
+                   VisualizationWallpapers \
+                   VoiceDialer \
+                   WAPPushManager
