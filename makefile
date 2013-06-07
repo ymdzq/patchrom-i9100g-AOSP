@@ -17,9 +17,13 @@ local-modified-apps := Gallery2
 local-modified-jars :=
 
 # All apks from MIUI
-local-miui-removed-apps := MediaProvider Stk
+local-miui-removed-apps := Bluetooth MediaProvider Stk
 
-local-miui-modified-apps := MiuiHome Settings Phone Mms ThemeManager Backup Contacts DeskClock FileExplorer MiuiGallery Music Notes PackageInstaller SoundRecorder Weather
+local-miui-modified-apps := MiuiHome Settings Phone Mms ThemeManager DeskClock
+
+# Config density for co-developers to use the aaps with HDPI or XHDPI resource,
+# Default configrations are HDPI for ics branch and XHDPI for jellybean branch
+local-density := HDPI
 
 include phoneapps.mk
 
