@@ -1,24 +1,23 @@
-From 7d2141b0b2bd53a3369b04c3fde8c36419746e75 Mon Sep 17 00:00:00 2001
+From 7a3cccf3f5db76e68892ce76ea61c510174f96eb Mon Sep 17 00:00:00 2001
 From: ymdzq <233900743@qq.com>
-Date: Fri, 5 Apr 2013 21:17:48 +0800
-Subject: [PATCH] Patch for fix availableInternalMemory
+Date: Sun, 11 Aug 2013 13:15:51 +0800
+Subject: [PATCH] show the Headsets Settings
 
 ---
- Settings/smali/com/android/settings/MiuiDeviceInfoSettings.smali |    3 ---
- 1 file changed, 3 deletions(-)
+ Settings/smali/com/android/settings/MiuiSettings.smali | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 
---- a/Settings/smali/com/android/settings/MiuiDeviceInfoSettings.smali
-+++ b/Settings/smali/com/android/settings/MiuiDeviceInfoSettings.smali
-@@ -234,9 +234,6 @@
-     iget-wide v1, v11, Lcom/android/settings/MiuiDeviceInfoSettings$SDCardInfo;->free:J
+--- a/Settings/smali/com/android/settings/MiuiSettings.smali
++++ b/Settings/smali/com/android/settings/MiuiSettings.smali
+@@ -1275,7 +1275,7 @@
  
-     .local v1, availableSize:J
--    sget-boolean v11, Lmiui/os/Build;->IS_XIAOMI:Z
--
--    if-nez v11, :cond_0
+     sget-boolean v5, Lmiui/os/Build;->IS_XIAOMI:Z
  
-     invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getResources()Landroid/content/res/Resources;
+-    if-nez v5, :cond_1
++    if-eqz v5, :cond_1
+ 
+     invoke-interface {p1, v1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
  
 -- 
-1.7.10.4
+1.8.1.2
 
