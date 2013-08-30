@@ -47,6 +47,7 @@ local-pre-zip-misc:
 	@echo Update boot image
 	cp other/boot.img $(ZIP_DIR)/boot.img
 	@echo Add Stock APK
+	cp other/GalaxyS2Settings.apk $(ZIP_DIR)/system/app/GalaxyS2Settings.apk
 	cp other/Gallery2.apk $(ZIP_DIR)/system/app/Gallery2.apk
 	cp other/OriginalSettings.apk $(ZIP_DIR)/system/app/OriginalSettings.apk
 #	@echo Add Cusettings

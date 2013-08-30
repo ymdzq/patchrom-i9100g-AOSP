@@ -5,7 +5,6 @@ local-phone-apps = ApplicationsProvider \
                    DrmProvider \
                    FaceLock \
                    Galaxy4 \
-                   GalaxyS2Settings \
                    Gallery2 \
                    HoloSpiralWallpaper \
                    HTMLViewer \
